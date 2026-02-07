@@ -41,7 +41,7 @@ export default function Home() {
             <div className="order-1 md:order-2 flex justify-center">
               <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-[var(--hops-green)] shadow-2xl">
                 <Image
-                  src="/images/mark-headshot.jpg"
+                  src="/images/mark-headshot-opt.jpg"
                   alt="Mark Watson"
                   fill
                   className="object-cover"
@@ -59,7 +59,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-80 md:h-96 rounded-xl overflow-hidden shadow-xl">
               <Image
-                src="/images/family.jpg"
+                src="/images/family-opt.jpg"
                 alt="Mark Watson with his family"
                 fill
                 className="object-cover"

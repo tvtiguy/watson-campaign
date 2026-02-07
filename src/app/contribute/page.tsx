@@ -25,7 +25,7 @@ export default function ContributePage() {
             <div className="flex justify-center">
               <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-[var(--hops-green)] shadow-2xl">
                 <Image
-                  src="/images/contribute.png"
+                  src="/images/contribute-opt.jpg"
                   alt="Mark Watson"
                   fill
                   className="object-cover"

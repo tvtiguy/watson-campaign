@@ -26,7 +26,7 @@ export default function AboutPage() {
             <div className="flex justify-center">
               <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/images/heart-cropped.png"
+                  src="/images/heart-cropped-opt.jpg"
                   alt="Mark Watson - Heart for Hillsboro"
                   fill
                   className="object-cover"
@@ -70,7 +70,7 @@ export default function AboutPage() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg">
               <div className="relative h-64">
                 <Image
-                  src="/images/school-board.jpg"
+                  src="/images/school-board-opt.jpg"
                   alt="Mark Watson with Hillsboro School District plaque"
                   fill
                   className="object-cover object-[center_30%]"
@@ -88,7 +88,7 @@ export default function AboutPage() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg">
               <div className="relative h-64">
                 <Image
-                  src="/images/capitol2.png"
+                  src="/images/capitol2-opt.jpg"
                   alt="Mark Watson at the Oregon State Capitol"
                   fill
                   className="object-cover"
@@ -106,7 +106,7 @@ export default function AboutPage() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg">
               <div className="relative h-64">
                 <Image
-                  src="/images/golf-standrews.jpg"
+                  src="/images/golf-standrews-opt.jpg"
                   alt="Mark Watson golfing at St Andrews"
                   fill
                   className="object-cover object-[center_15%]"
@@ -124,7 +124,7 @@ export default function AboutPage() {
             <div className="bg-white rounded-xl overflow-hidden shadow-lg">
               <div className="relative h-64">
                 <Image
-                  src="/images/community-service.jpg"
+                  src="/images/community-service-opt.jpg"
                   alt="Mark Watson volunteering in the community"
                   fill
                   className="object-cover"
