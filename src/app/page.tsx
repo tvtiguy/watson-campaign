@@ -21,7 +21,7 @@ export default function Home() {
                 Hillsboro &bull; Cornelius &bull; Forest Grove
               </p>
               <blockquote className="border-l-4 border-[var(--hops-green)] pl-6 text-lg md:text-xl italic text-gray-200 mb-8">
-                &ldquo;Our family moved to Oregon to work for Intel and within two years I was laid off. I was able to co-found a successful software company working with MLB and NHL teams. After my time in the game I transitioned to a role as a legislative aide working to serve the residents of House District 29. As your Representative, I intend to continue working for you with an open mind and heart.&rdquo;
+                &ldquo;Our family moved to Oregon to work for Intel and within two years I was laid off. We struggled, but I was able to co-found a successful software company working with MLB and NHL teams. After my time in the game I transitioned to a role as a legislative aide working to serve the residents of House District 29. As your Representative, I intend to continue working for you with an open mind and heart.&rdquo;
               </blockquote>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
