@@ -21,12 +21,14 @@ export default function Header() {
           >
             About
           </Link>
+          {/* Supporters link hidden temporarily
           <Link
             href="/supporters"
             className={`transition-colors ${isActive("/supporters") ? "text-[var(--hops-green)]" : "hover:text-[var(--hops-green)]"}`}
           >
             Supporters
           </Link>
+          */}
           <Link
             href="/contribute"
             className="bg-[var(--hops-green)] hover:bg-[var(--hops-green-light)] px-4 py-2 rounded-md font-semibold transition-colors"
@@ -52,12 +54,14 @@ export default function Header() {
         >
           About
         </Link>
+        {/* Supporters link hidden temporarily
         <Link
           href="/supporters"
           className={`transition-colors ${isActive("/supporters") ? "text-[var(--hops-green)]" : "hover:text-[var(--hops-green)]"}`}
         >
           Supporters
         </Link>
+        */}
       </div>
     </nav>
   );

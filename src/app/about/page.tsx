@@ -168,16 +168,16 @@ export default function AboutPage() {
       <section className="py-16 bg-[var(--hops-green)] text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Learn More?
+            Ready to Get Involved?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            See who&apos;s supporting Mark&apos;s campaign for House District 29.
+            Support Mark&apos;s campaign for House District 29.
           </p>
           <Link
-            href="/supporters"
+            href="/contribute"
             className="inline-block bg-white text-[var(--hops-navy)] hover:bg-[var(--hops-cream)] px-10 py-4 rounded-md font-bold text-xl transition-colors shadow-lg"
           >
-            View Supporters
+            Contribute Now
           </Link>
         </div>
       </section>

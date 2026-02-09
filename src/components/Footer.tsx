@@ -10,7 +10,9 @@ export default function Footer() {
         </p>
         <div className="flex justify-center space-x-6 text-sm text-gray-400">
           <Link href="/about" className="hover:text-[var(--hops-green)] transition-colors">About</Link>
+          {/* Supporters link hidden temporarily
           <Link href="/supporters" className="hover:text-[var(--hops-green)] transition-colors">Supporters</Link>
+          */}
           <Link href="/contribute" className="hover:text-[var(--hops-green)] transition-colors">Contribute</Link>
         </div>
       </div>

@@ -121,7 +121,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Supporters Preview */}
+      {/* Supporters Preview - hidden temporarily
       <section className="py-16 bg-[var(--hops-navy)] text-white">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -149,6 +149,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      */}
 
       {/* Contribute CTA */}
       <section className="py-16 md:py-24 bg-[var(--hops-green)] text-white">
