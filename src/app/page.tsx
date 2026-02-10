@@ -20,9 +20,9 @@ export default function Home() {
               <p className="text-xl md:text-2xl mb-8 text-gray-200 leading-relaxed">
                 Hillsboro &bull; Cornelius &bull; Forest Grove
               </p>
-              <p className="border-l-4 border-[var(--hops-green)] pl-6 text-lg md:text-xl text-gray-200 mb-8">
-                I have lived in Washington County for more than 25 years–I&apos;ve raised my family here, operated a successful small business, and proudly served on the Hillsboro School Board since 2017. I am running for State Representative for House District 29 because our community needs a leader who listens, acts with empathy, and is ready to get to work for our residents during these challenging times.
-              </p>
+              <blockquote className="border-l-4 border-[var(--hops-green)] pl-6 text-lg md:text-xl italic text-gray-200 mb-8">
+                &ldquo;I have lived in Washington County for more than 25 years–I&apos;ve raised my family here, operated a successful small business, and proudly served on the Hillsboro School Board since 2017. I am running for State Representative for House District 29 because our community needs a leader who listens, acts with empathy, and is ready to get to work for our residents during these challenging times.&rdquo;
+              </blockquote>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/contribute"
