@@ -43,16 +43,16 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-4">
           <div className="prose prose-lg max-w-none text-gray-700">
             <p className="text-xl leading-relaxed mb-6">
-              I am a husband, father, small business owner, and school board director. I&apos;ve spent all of my time in Oregon living in the Hillsboro School District but only recently moved from Aloha to Downtown Hillsboro.
+              Mark is a husband, father, small business owner, and school board director. He has spent all of his time in Oregon living in the Hillsboro School District but only recently moved from Aloha to Downtown Hillsboro.
             </p>
             <p className="text-xl leading-relaxed mb-6">
-              I co-founded a software company specializing in computerized video analysis for MLB and NHL teams. We had contracts with 29 of the 30 MLB teams and 23 of the 30 NHL teams.
+              Mark co-founded a software company specializing in computerized video analysis for MLB and NHL teams, securing contracts with 29 of the 30 MLB teams and 23 of the 30 NHL teams.
             </p>
             <p className="text-xl leading-relaxed mb-6">
-              Recently I&apos;ve been working as a legislative aide in the State Capitol, serving in Representative and Senator Sollman&apos;s legislative office. This experience has given me firsthand knowledge of how to effectively advocate for our district.
+              Recently he has been working as a legislative aide in the State Capitol, serving in Representative and Senator Sollman&apos;s legislative office. This experience has given him firsthand knowledge of how to effectively advocate for the district.
             </p>
             <p className="text-xl leading-relaxed mb-8">
-              When I&apos;m not advocating for education you can find me on a golf course or playing music in my cover band: 45th Parallel.
+              When he&apos;s not advocating for education, you can find Mark on a golf course or playing music in his cover band: 45th Parallel.
             </p>
           </div>
         </div>
