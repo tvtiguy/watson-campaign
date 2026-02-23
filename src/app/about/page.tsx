@@ -109,7 +109,7 @@ export default function AboutPage() {
                   src="/images/golf-standrews-opt.jpg"
                   alt="Mark Watson performing with 45th Parallel"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
               <div className="p-6">
