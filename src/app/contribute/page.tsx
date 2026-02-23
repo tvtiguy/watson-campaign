@@ -64,6 +64,24 @@ export default function ContributePage() {
         </div>
       </section>
 
+      {/* Connect / Volunteer */}
+      <section className="py-12 bg-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-[var(--hops-navy)] mb-4">
+            Volunteer
+          </h2>
+          <p className="text-lg text-gray-700 mb-6">
+            Want to volunteer, host a yard sign, or knock on doors? We&apos;d love to hear from you.
+          </p>
+          <a
+            href="mailto:info@watsonfororegon.com"
+            className="inline-block text-xl font-semibold text-[var(--hops-green)] hover:text-[var(--hops-green-light)] transition-colors"
+          >
+            info@watsonfororegon.com
+          </a>
+        </div>
+      </section>
+
       {/* Why Contribute */}
       <section className="py-16 bg-[var(--hops-cream)]">
         <div className="max-w-6xl mx-auto px-4">

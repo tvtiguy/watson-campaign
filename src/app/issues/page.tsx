@@ -108,6 +108,12 @@ export default function IssuesPage() {
               <p className="text-lg text-gray-700 leading-relaxed">
                 State Representatives should do more than vote on the House floor. It requires a proactive, visible presence in Cornelius, Forest Grove, and Hillsboro. The historical standard of an &ldquo;open door&rdquo; is insufficient in an era where constituents expect their leaders to be present in local spaces. I am committed to maintaining clean lines of communication with our city leaders and school districts to ensure our district&apos;s needs are never misinterpreted in Salem.
               </p>
+              <p className="text-lg mt-6">
+                <span className="font-bold text-[var(--hops-navy)]">Connect with the Campaign: </span>
+                <a href="mailto:info@watsonfororegon.com" className="text-[var(--hops-green)] hover:text-[var(--hops-green-light)] font-semibold transition-colors">
+                  info@watsonfororegon.com
+                </a>
+              </p>
             </div>
           </div>
         </div>
