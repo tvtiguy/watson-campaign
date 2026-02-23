@@ -49,7 +49,7 @@ export default function AboutPage() {
               Mark co-founded a software company specializing in computerized video analysis for MLB and NHL teams, securing contracts with 29 of the 30 MLB teams and 23 of the 30 NHL teams.
             </p>
             <p className="text-xl leading-relaxed mb-6">
-              Recently he has been working as a legislative aide in the State Capitol, serving in Representative and Senator Sollman&apos;s legislative office. This experience has given him firsthand knowledge of how to effectively advocate for the district.
+              Recently he has been working as a legislative aide in the State Capitol, serving offices in both the House and Senate. This experience has given him firsthand knowledge of how to effectively advocate for the district.
             </p>
             <p className="text-xl leading-relaxed mb-8">
               When he&apos;s not advocating for education, you can find Mark on a golf course or playing music in his cover band: 45th Parallel.
