@@ -107,9 +107,9 @@ export default function AboutPage() {
               <div className="relative h-64">
                 <Image
                   src="/images/golf-standrews-opt.jpg"
-                  alt="Mark Watson golfing at St Andrews"
+                  alt="Mark Watson performing with 45th Parallel"
                   fill
-                  className="object-cover object-[center_15%]"
+                  className="object-cover"
                 />
               </div>
               <div className="p-6">
