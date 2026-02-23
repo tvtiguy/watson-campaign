@@ -20,7 +20,7 @@ export default function IssuesPage() {
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">The Issues</h1>
               <p className="text-xl text-gray-200 leading-relaxed mb-4">
-                I worked 15 seasons in Major League Baseball. From my years working on the school board and in legislative offices, I know passing policies or bills is also a team effort. These are the issues I will immediately get to work on with my colleagues.
+                From my years working on the school board and in legislative offices, I know passing policies or bills is a team effort. I also worked 15 seasons in Major League Baseball. These are the issues I will immediately get to work on with my colleagues.
               </p>
               <p className="text-2xl font-bold text-[var(--hops-green-light)]">
                 Put me in coach, I&apos;m ready to play.
@@ -74,7 +74,7 @@ export default function IssuesPage() {
                 Economic Development
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Washington County is the economic engine of the state, but like all engines, it requires maintenance. We are facing a &ldquo;manufacturing recession,&rdquo; and the results are felt at every kitchen table. Let&apos;s pass policies that really illustrate that Oregon is open for business. The Hillsboro School District has 36 Career and Technical Education pathways (CTE) that connect students with the business community to prepare the workforce of tomorrow.
+                Washington County is the economic engine of the state, but like all engines, it requires maintenance. We are facing a &ldquo;manufacturing recession,&rdquo; and the results are felt at every kitchen table. Let&apos;s pass policies that really illustrate that Oregon is open for business. Between the Forest Grove School District and Hillsboro School District there are over 50 Career and Technical Education pathways (CTE) that connect students with the business community to prepare the workforce of tomorrow.
               </p>
             </div>
             <div className="relative h-80 rounded-xl overflow-hidden shadow-xl order-1 md:order-2">
