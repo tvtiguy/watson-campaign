@@ -145,7 +145,7 @@ export default function AboutPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-[var(--hops-navy)] mb-8 text-center">
-            The Full Story
+            A Deeper Dive
           </h2>
           <div className="bg-[var(--hops-cream)] rounded-xl p-8">
             <p className="leading-relaxed mb-4 text-gray-700">
