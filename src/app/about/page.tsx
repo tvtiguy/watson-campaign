@@ -43,7 +43,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-4">
           <div className="prose prose-lg max-w-none text-gray-700">
             <p className="text-xl leading-relaxed mb-6">
-              Mark is a husband, father, small business owner, and school board director. He has spent all of his time in Oregon living in the Hillsboro School District but only recently moved from Aloha to Downtown Hillsboro.
+              Mark is a husband, father, small business owner, and school board director. He has spent all of his time in Oregon living in the Hillsboro School District and recently moved to Downtown Hillsboro.
             </p>
             <p className="text-xl leading-relaxed mb-6">
               Mark co-founded a software company specializing in computerized video analysis for MLB and NHL teams, securing contracts with 29 of the 30 MLB teams and 23 of the 30 NHL teams.
@@ -155,7 +155,7 @@ export default function AboutPage() {
               In Tucson, AZ, where I received my Master&apos;s Degree at the University of Arizona and worked at the ABC affiliate KGUN, we lived on the far east side where the edge of Tucson meets the mountain wilderness. After a brief stop in Charlotte, NC, where I worked at the ABC affiliate WSOC and our daughter was born, I joined a team at Intel and we relocated to Oregon.
             </p>
             <p className="leading-relaxed mb-4 text-gray-700">
-              It was quickly clear to us that we could not afford to live in Hillsboro, so we looked for houses in Aloha and Forest Grove. We ended up in Aloha where we happily raised our children in the Hillsboro School District. After 21 years in Aloha, and a fire in our home, we remodeled the small house of my aging mother into a duplex and we now live in Downtown Hillsboro in a multigenerational household.
+              We happily raised our children in the Hillsboro School District, and after a fire in our home, we remodeled the small house of my aging mother into a duplex and we now live in Downtown Hillsboro in a multigenerational household.
             </p>
             <p className="leading-relaxed font-semibold text-[var(--hops-navy)]">
               After 26 years in Oregon, I hope we never have to live anywhere else.
