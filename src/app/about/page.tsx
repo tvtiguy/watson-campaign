@@ -46,7 +46,7 @@ export default function AboutPage() {
               Mark is a husband, father, small business owner, and school board director. He has spent all of his time in Oregon living in the Hillsboro School District and recently moved to Downtown Hillsboro.
             </p>
             <p className="text-xl leading-relaxed mb-6">
-              Mark co-founded a software company specializing in computerized video analysis for MLB and NHL teams, securing contracts with 29 of the 30 MLB teams and 23 of the 30 NHL teams.
+              In 2002 Mark co-founded TVTI, a software company, specializing in computerized video analysis for MLB and NHL teams, securing contracts with almost all teams.
             </p>
             <p className="text-xl leading-relaxed mb-6">
               Recently he has been working as a legislative aide in the State Capitol, serving offices in both the House and Senate. This experience has given him firsthand knowledge of how to effectively advocate for the district.
