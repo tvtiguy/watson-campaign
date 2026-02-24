@@ -155,7 +155,7 @@ export default function AboutPage() {
               In Tucson, AZ, where I received my Master&apos;s Degree at the University of Arizona and worked at the ABC affiliate KGUN, we lived on the far east side where the edge of Tucson meets the mountain wilderness. After a brief stop in Charlotte, NC, where I worked at the ABC affiliate WSOC and our daughter was born, I joined a team at Intel and we relocated to Oregon.
             </p>
             <p className="leading-relaxed mb-4 text-gray-700">
-              We happily raised our children in the Hillsboro School District, and after a fire in our home, we remodeled the small house of my aging mother into a duplex and we now live in Downtown Hillsboro in a multigenerational household.
+              We happily raised our children in the Hillsboro School District. In 2021 our home was taken from us in a fire and we had to start again. We remodeled the small home of my mother in downtown Hillsboro into a duplex, and now enjoy the many benefits of multigenerational living.
             </p>
             <p className="leading-relaxed font-semibold text-[var(--hops-navy)]">
               After 26 years in Oregon, I hope we never have to live anywhere else.
