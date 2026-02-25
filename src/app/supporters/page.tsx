@@ -65,17 +65,6 @@ export default function SupportersPage() {
         </div>
       </section>
 
-      {/* State Senator */}
-      <section className="py-16 bg-[var(--hops-navy)] text-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-8">State Legislative Endorsement</h2>
-          <div className="bg-[var(--hops-navy-dark)] rounded-xl p-10 border-2 border-[var(--hops-green)]">
-            <p className="text-[var(--hops-green)] text-lg font-semibold mb-2">State Senator</p>
-            <p className="text-3xl md:text-4xl font-bold">Janeen Sollman</p>
-          </div>
-        </div>
-      </section>
-
       {/* Community Photo */}
       <section className="py-16 bg-[var(--hops-cream)]">
         <div className="max-w-6xl mx-auto px-4">
