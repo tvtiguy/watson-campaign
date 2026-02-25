@@ -102,24 +102,6 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Golf */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg">
-              <div className="relative h-64">
-                <Image
-                  src="/images/golf-standrews-opt.jpg"
-                  alt="Mark Watson performing with 45th Parallel"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-[var(--hops-navy)] mb-2">Life Outside Politics</h3>
-                <p className="text-gray-600">
-                  An avid golfer and musician, Mark plays in his cover band 45th Parallel when not working for the community.
-                </p>
-              </div>
-            </div>
-
             {/* Equal Justice */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg">
               <div className="relative h-64">
@@ -134,6 +116,24 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold text-[var(--hops-navy)] mb-2">Community Service</h3>
                 <p className="text-gray-600">
                   Giving back to our neighbors through volunteer work and community involvement.
+                </p>
+              </div>
+            </div>
+
+            {/* Golf */}
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg">
+              <div className="relative h-64">
+                <Image
+                  src="/images/golf-standrews-opt.jpg"
+                  alt="Mark Watson performing with 45th Parallel"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-[var(--hops-navy)] mb-2">Life Outside Politics</h3>
+                <p className="text-gray-600">
+                  An avid golfer and musician, Mark plays in his cover band 45th Parallel when not working for the community.
                 </p>
               </div>
             </div>

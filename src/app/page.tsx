@@ -39,14 +39,16 @@ export default function Home() {
               </div>
             </div>
             <div className="order-1 md:order-2 flex justify-center">
-              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-[var(--hops-green)] shadow-2xl">
-                <Image
-                  src="/images/mark-headshot-opt.jpg"
-                  alt="Mark Watson"
-                  fill
-                  className="object-cover"
-                  priority
-                />
+              <div className="bg-white rounded-lg p-4 shadow-2xl">
+                <div className="relative w-72 h-72 md:w-[400px] md:h-[400px]">
+                  <Image
+                    src="/images/hd29-watson-logo.png"
+                    alt="Mark Watson for Oregon House District 29"
+                    fill
+                    className="object-contain"
+                    priority
+                  />
+                </div>
               </div>
             </div>
           </div>

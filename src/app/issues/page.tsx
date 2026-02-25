@@ -27,12 +27,12 @@ export default function IssuesPage() {
               </p>
             </div>
             <div className="flex justify-center">
-              <div className="relative w-full h-64 md:h-80 rounded-xl overflow-hidden shadow-2xl">
+              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-[var(--hops-green)] shadow-2xl">
                 <Image
-                  src="/images/suntrust-opt.jpg"
-                  alt="Mark Watson at a Major League Baseball stadium"
+                  src="/images/mark-headshot-opt.jpg"
+                  alt="Mark Watson"
                   fill
-                  className="object-cover object-top"
+                  className="object-cover"
                   priority
                 />
               </div>
@@ -74,15 +74,15 @@ export default function IssuesPage() {
                 Economic Development
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Washington County is the economic engine of the state, but like all engines, it requires maintenance. We are facing a &ldquo;manufacturing recession,&rdquo; and the results are felt at every kitchen table. Let&apos;s pass policies that really illustrate that Oregon is open for business. Between the Forest Grove School District and Hillsboro School District there are over 50 Career and Technical Education pathways (CTE) that connect students with the business community to prepare the workforce of tomorrow.
+                Washington County is the economic engine of the state, but like all engines, it requires maintenance. We are facing a manufacturing recession, and the results are felt at every kitchen table. Let&apos;s pass policies that really illustrate that Oregon is open for business. Between the Forest Grove School District and Hillsboro School District there are over 50 Career and Technical Education pathways (CTE) that connect students with the business community to prepare the workforce of tomorrow.
               </p>
             </div>
             <div className="relative h-80 rounded-xl overflow-hidden shadow-xl order-1 md:order-2">
               <Image
-                src="/images/economic-opt.jpg"
-                alt="Career and Technical Education workforce pathways"
+                src="/images/suntrust-opt.jpg"
+                alt="Mark Watson at a Major League Baseball stadium"
                 fill
-                className="object-contain"
+                className="object-cover object-top"
               />
             </div>
           </div>
@@ -106,7 +106,7 @@ export default function IssuesPage() {
                 Community Engagement
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                State Representatives should do more than vote on the House floor. It requires a proactive, visible presence in Cornelius, Forest Grove, and Hillsboro. The historical standard of an &ldquo;open door&rdquo; is insufficient in an era where constituents expect their leaders to be present in local spaces. I am committed to maintaining clean lines of communication with our city leaders and school districts to ensure our district&apos;s needs are never misinterpreted in Salem.
+                State Representatives should do more than vote on the House floor. It requires a proactive, visible presence in Cornelius, Forest Grove, and Hillsboro. The historical standard of an open door is insufficient in an era where constituents expect their leaders to be present in local spaces. I am committed to maintaining clear lines of communication with our city leaders and school districts to ensure our district&apos;s needs are never misinterpreted in Salem.
               </p>
               <p className="text-lg mt-6">
                 <span className="font-bold text-[var(--hops-navy)]">Connect with the Campaign: </span>
