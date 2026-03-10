@@ -103,6 +103,7 @@ export default function SupportersPage() {
       <section className="py-16 bg-[var(--hops-cream)]">
         <div className="max-w-6xl mx-auto px-4">
           <SectionHeader>Forest Grove School Board</SectionHeader>
+          <p className="text-gray-500 text-base -mt-6 mb-6 ml-5">Serving Cornelius and Forest Grove</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             <SupporterCard name="Kristy Kottkey" title="School Board Chair" />
             <SupporterCard name="Pete Truax" title="School Board Director" />
@@ -115,6 +116,7 @@ export default function SupportersPage() {
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <SectionHeader>Hillsboro School Board</SectionHeader>
+          <p className="text-gray-500 text-base -mt-6 mb-6 ml-5">Serving Cornelius, Hillsboro, and rural Washington County</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             <SupporterCard name="Ivette Pantoja" title="School Board Chair" />
             <SupporterCard name="See Eun Kim" title="School Board Vice Chair" />
