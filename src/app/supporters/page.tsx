@@ -5,8 +5,26 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Supporters | Mark Watson for Oregon House District 29",
-  description: "Community leaders endorsing Mark Watson for Oregon House District 29 - including mayors, state legislators, councilors, and school board members.",
+  description: "27 community leaders endorsing Mark Watson for Oregon House District 29 — mayors, councilors, school board members, and more.",
 };
+
+function SupporterCard({ name, title }: { name: string; title: string }) {
+  return (
+    <div className="bg-white rounded-lg p-5 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+      <p className="text-[var(--hops-green)] text-xs font-semibold uppercase tracking-wide mb-1">{title}</p>
+      <p className="text-lg font-bold text-[var(--hops-navy)]">{name}</p>
+    </div>
+  );
+}
+
+function SectionHeader({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="flex items-center gap-4 mb-8">
+      <div className="w-1 h-8 bg-[var(--hops-green)] rounded-full flex-shrink-0" />
+      <h2 className="text-2xl font-bold text-[var(--hops-navy)]">{children}</h2>
+    </div>
+  );
+}
 
 export default function SupportersPage() {
   return (
@@ -18,9 +36,12 @@ export default function SupportersPage() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Endorsed By</h1>
+              <div className="inline-block bg-[var(--hops-green)] text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
+                27 Endorsers and Growing
+              </div>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">Endorsed By<br />Community Leaders</h1>
               <p className="text-xl text-gray-200 leading-relaxed">
-                Community leaders across Hillsboro, Cornelius, and Forest Grove are supporting Mark Watson for House District 29.
+                Mayors, city councilors, school board members, and community leaders across Hillsboro, Cornelius, and Forest Grove are backing Mark Watson for House District 29.
               </p>
             </div>
             <div className="flex justify-center">
@@ -38,90 +59,95 @@ export default function SupportersPage() {
         </div>
       </section>
 
-      {/* Mayors Section */}
-      <section className="py-16 bg-white flex-grow">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-[var(--hops-navy)] mb-8 text-center">
-            Mayoral Endorsements
-          </h2>
-          <p className="text-center text-gray-600 mb-12 text-lg">
-            All three mayors in House District 29 endorse Mark Watson
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-[var(--hops-cream)] rounded-xl p-8 text-center shadow-lg border-t-4 border-[var(--hops-green)]">
-              <p className="text-[var(--hops-green)] text-sm font-semibold mb-2">Mayor of Hillsboro</p>
-              <p className="text-2xl font-bold text-[var(--hops-navy)]">Beach Pace</p>
-            </div>
-            <div className="bg-[var(--hops-cream)] rounded-xl p-8 text-center shadow-lg border-t-4 border-[var(--hops-green)]">
-              <p className="text-[var(--hops-green)] text-sm font-semibold mb-2">Mayor of Cornelius</p>
-              <p className="text-2xl font-bold text-[var(--hops-navy)]">Jef Dalin</p>
-            </div>
-            <div className="bg-[var(--hops-cream)] rounded-xl p-8 text-center shadow-lg border-t-4 border-[var(--hops-green)]">
-              <p className="text-[var(--hops-green)] text-sm font-semibold mb-2">Mayor of Forest Grove</p>
-              <p className="text-2xl font-bold text-[var(--hops-navy)]">Malynda Wenzl</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Community Photo */}
+      {/* Mayors — featured */}
       <section className="py-16 bg-[var(--hops-cream)]">
         <div className="max-w-6xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative h-80 rounded-xl overflow-hidden shadow-xl">
-              <Image
-                src="/images/hops-game.jpg"
-                alt="Mark Watson at Hillsboro Hops game"
-                fill
-                className="object-cover"
-              />
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-bold text-[var(--hops-navy)] mb-2">All Three Mayors Endorse Mark Watson</h2>
+            <p className="text-gray-600">Every mayor in House District 29</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-xl p-8 text-center shadow-md border-t-4 border-[var(--hops-green)]">
+              <p className="text-[var(--hops-green)] text-sm font-semibold uppercase tracking-wide mb-2">Mayor of Cornelius</p>
+              <p className="text-2xl font-bold text-[var(--hops-navy)]">Jef Dalin</p>
             </div>
-            <div>
-              <h2 className="text-3xl font-bold text-[var(--hops-navy)] mb-6">
-                Rooted in Community
-              </h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Mark is a familiar face at community events throughout District 29 - from Hillsboro Hops games to Theater in the Grove. His deep connections to our community are why so many local leaders trust him to represent us in Salem.
-              </p>
+            <div className="bg-white rounded-xl p-8 text-center shadow-md border-t-4 border-[var(--hops-green)]">
+              <p className="text-[var(--hops-green)] text-sm font-semibold uppercase tracking-wide mb-2">Mayor of Forest Grove</p>
+              <p className="text-2xl font-bold text-[var(--hops-navy)]">Malynda Wenzl</p>
+            </div>
+            <div className="bg-white rounded-xl p-8 text-center shadow-md border-t-4 border-[var(--hops-green)]">
+              <p className="text-[var(--hops-green)] text-sm font-semibold uppercase tracking-wide mb-2">Mayor of Hillsboro</p>
+              <p className="text-2xl font-bold text-[var(--hops-navy)]">Beach Pace</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Local Officials */}
+      {/* City Council */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-[var(--hops-navy)] mb-12 text-center">
-            A Growing List of Community Leaders
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
-            <h3 className="md:col-span-2 text-xl font-semibold text-[var(--hops-navy)] mb-2">City Councilors</h3>
-            <div className="bg-[var(--hops-cream)] rounded-xl p-6 shadow">
-              <p className="text-[var(--hops-green)] text-sm font-semibold mb-1">Councilor, Cornelius</p>
-              <p className="text-xl font-bold text-[var(--hops-navy)]">Angeles Godinez Valencia</p>
-            </div>
-            <div className="bg-[var(--hops-cream)] rounded-xl p-6 shadow">
-              <p className="text-[var(--hops-green)] text-sm font-semibold mb-1">Councilor, Hillsboro</p>
-              <p className="text-xl font-bold text-[var(--hops-navy)]">Elizabeth Case</p>
-            </div>
+          <SectionHeader>City Council</SectionHeader>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <SupporterCard name="Rob Harris" title="City Council President — Hillsboro" />
+            <SupporterCard name="Saba Anvery" title="City Councilor — Hillsboro" />
+            <SupporterCard name="Elizabeth Case" title="City Councilor — Hillsboro" />
+            <SupporterCard name="Angeles Godinez" title="City Council President — Cornelius" />
+            <SupporterCard name="Eden Lopez" title="City Councilor — Cornelius" />
+            <SupporterCard name="Mariana Valenzuela" title="City Councilor — Forest Grove" />
+            <SupporterCard name="Brian Schimmel" title="City Councilor — Forest Grove" />
           </div>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <h3 className="md:col-span-3 text-xl font-semibold text-[var(--hops-navy)] mb-2">School Board Leaders</h3>
-            <div className="bg-[var(--hops-cream)] rounded-xl p-6 shadow">
-              <p className="text-[var(--hops-green)] text-sm font-semibold mb-1">Chair, Forest Grove School District</p>
-              <p className="text-xl font-bold text-[var(--hops-navy)]">Kristy Kottkey</p>
-            </div>
-            <div className="bg-[var(--hops-cream)] rounded-xl p-6 shadow">
-              <p className="text-[var(--hops-green)] text-sm font-semibold mb-1">Chair, Hillsboro School District</p>
-              <p className="text-xl font-bold text-[var(--hops-navy)]">Ivette Pantoja</p>
-            </div>
-            <div className="bg-[var(--hops-cream)] rounded-xl p-6 shadow">
-              <p className="text-[var(--hops-green)] text-sm font-semibold mb-1">Director, Hillsboro School District</p>
-              <p className="text-xl font-bold text-[var(--hops-navy)]">Katie Rhyne</p>
-            </div>
+      {/* Washington County */}
+      <section className="py-10 bg-[var(--hops-cream)]">
+        <div className="max-w-6xl mx-auto px-4">
+          <SectionHeader>Washington County</SectionHeader>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <SupporterCard name="Kristine Adams Wannberg" title="Washington County Auditor" />
+          </div>
+        </div>
+      </section>
+
+      {/* Hillsboro School Board */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <SectionHeader>Hillsboro School Board</SectionHeader>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <SupporterCard name="Ivette Pantoja" title="School Board Chair" />
+            <SupporterCard name="See Eun Kim" title="School Board Vice Chair" />
+            <SupporterCard name="Katie Rhyne" title="School Board Member" />
+            <SupporterCard name="Yessica Hardin Mercado" title="School Board Member" />
+            <SupporterCard name="Patrick Maguire" title="School Board Member" />
+            <SupporterCard name="Nancy Thomas" title="School Board Member" />
+          </div>
+        </div>
+      </section>
+
+      {/* Hillsboro Hops */}
+      <section className="py-10 bg-[var(--hops-cream)]">
+        <div className="max-w-6xl mx-auto px-4">
+          <SectionHeader>Hillsboro Hops Leadership</SectionHeader>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <SupporterCard name="Mike McMurray" title="CEO, Hillsboro Hops" />
+            <SupporterCard name="Laura McMurray" title="CFO, Hillsboro Hops" />
+          </div>
+        </div>
+      </section>
+
+      {/* Community & Education Leaders */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <SectionHeader>Community &amp; Education Leaders</SectionHeader>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <SupporterCard name="Kim Strelchun" title="President, Hillsboro Schools Foundation" />
+            <SupporterCard name="Jaci Spross" title="Hillsboro Schools Foundation; Former School Board Member" />
+            <SupporterCard name="Laura Bekken" title="Hillsboro Schools Foundation" />
+            <SupporterCard name="Gabriel Jones-Gallardo" title="Planning Commission President — Hillsboro" />
+            <SupporterCard name="Lisa Allen" title="Former Hillsboro School Board Member" />
+            <SupporterCard name="Erika Lopez" title="Former Hillsboro School Board Member" />
+            <SupporterCard name="Kyle Allen" title="Former City Councilor — Hillsboro" />
+            <SupporterCard name="Deborah Clarke" title="Community Leader" />
           </div>
         </div>
       </section>
@@ -129,7 +155,7 @@ export default function SupportersPage() {
       {/* CTA */}
       <section className="py-16 bg-[var(--hops-green)] text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Join These Community Leaders
           </h2>
           <p className="text-xl mb-8 opacity-90">

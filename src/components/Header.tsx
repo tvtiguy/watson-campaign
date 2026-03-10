@@ -33,14 +33,6 @@ export default function Header() {
           >
             About
           </Link>
-          {/* Supporters link hidden temporarily
-          <Link
-            href="/supporters"
-            className={`transition-colors ${isActive("/supporters") ? "text-[var(--hops-green)]" : "hover:text-[var(--hops-green)]"}`}
-          >
-            Supporters
-          </Link>
-          */}
           <Link
             href="/issues"
             className={`transition-colors ${isActive("/issues") ? "text-[var(--hops-green)]" : "hover:text-[var(--hops-green)]"}`}
@@ -78,14 +70,6 @@ export default function Header() {
         >
           About
         </Link>
-        {/* Supporters link hidden temporarily
-        <Link
-          href="/supporters"
-          className={`transition-colors ${isActive("/supporters") ? "text-[var(--hops-green)]" : "hover:text-[var(--hops-green)]"}`}
-        >
-          Supporters
-        </Link>
-        */}
         <Link
           href="/issues"
           className={`transition-colors ${isActive("/issues") ? "text-[var(--hops-green)]" : "hover:text-[var(--hops-green)]"}`}
