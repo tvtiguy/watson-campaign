@@ -116,10 +116,10 @@ export default function SupportersPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             <SupporterCard name="Ivette Pantoja" title="School Board Chair" />
             <SupporterCard name="See Eun Kim" title="School Board Vice Chair" />
-            <SupporterCard name="Katie Rhyne" title="School Board Member" />
-            <SupporterCard name="Yessica Hardin Mercado" title="School Board Member" />
-            <SupporterCard name="Patrick Maguire" title="School Board Member" />
-            <SupporterCard name="Nancy Thomas" title="School Board Member" />
+            <SupporterCard name="Katie Rhyne" title="School Board Director" />
+            <SupporterCard name="Yessica Hardin Mercado" title="School Board Director" />
+            <SupporterCard name="Patrick Maguire" title="School Board Director" />
+            <SupporterCard name="Nancy Thomas" title="School Board Director" />
           </div>
         </div>
       </section>
@@ -130,8 +130,8 @@ export default function SupportersPage() {
           <SectionHeader>Forest Grove School Board</SectionHeader>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             <SupporterCard name="Kristy Kottkey" title="School Board Chair" />
-            <SupporterCard name="Pete Truax" title="School Board Member" />
-            <SupporterCard name="Brisa Franco" title="School Board Member" />
+            <SupporterCard name="Pete Truax" title="School Board Director" />
+            <SupporterCard name="Brisa Franco" title="School Board Director" />
           </div>
         </div>
       </section>
@@ -153,11 +153,11 @@ export default function SupportersPage() {
           <SectionHeader>Community &amp; Education Leaders</SectionHeader>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             <SupporterCard name="Kim Strelchun" title="President, Hillsboro Schools Foundation" />
-            <SupporterCard name="Jaci Spross" title="Hillsboro Schools Foundation; Former School Board Member" />
+            <SupporterCard name="Jaci Spross" title="Hillsboro Schools Foundation; Former School Board Director" />
             <SupporterCard name="Laura Bekken" title="Hillsboro Schools Foundation" />
             <SupporterCard name="Gabriel Jones-Gallardo" title="Planning Commission President — Hillsboro" />
-            <SupporterCard name="Lisa Allen" title="Former Hillsboro School Board Member" />
-            <SupporterCard name="Erika Lopez" title="Former Hillsboro School Board Member" />
+            <SupporterCard name="Lisa Allen" title="Former Hillsboro School Board Director" />
+            <SupporterCard name="Erika Lopez" title="Former Hillsboro School Board Director" />
             <SupporterCard name="Kyle Allen" title="Former City Councilor — Hillsboro" />
             <SupporterCard name="Deborah Clarke" title="Community Leader" />
           </div>
