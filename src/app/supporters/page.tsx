@@ -83,28 +83,30 @@ export default function SupportersPage() {
         </div>
       </section>
 
-      {/* City Council */}
+      {/* City Councilors */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <SectionHeader>City Council</SectionHeader>
+          <SectionHeader>City Councilors</SectionHeader>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <SupporterCard name="Angeles Godinez Valencia" title="City Council President — Cornelius" />
+            <SupporterCard name="Eden Lopez" title="City Councilor — Cornelius" />
+            <SupporterCard name="Mariana Valenzuela" title="City Council President — Forest Grove" />
+            <SupporterCard name="Brian Schimmel" title="City Councilor — Forest Grove" />
             <SupporterCard name="Rob Harris" title="City Council President — Hillsboro" />
             <SupporterCard name="Saba Anvery" title="City Councilor — Hillsboro" />
             <SupporterCard name="Elizabeth Case" title="City Councilor — Hillsboro" />
-            <SupporterCard name="Angeles Godinez Valencia" title="City Council President — Cornelius" />
-            <SupporterCard name="Eden Lopez" title="City Councilor — Cornelius" />
-            <SupporterCard name="Mariana Valenzuela" title="City Councilor — Forest Grove" />
-            <SupporterCard name="Brian Schimmel" title="City Councilor — Forest Grove" />
           </div>
         </div>
       </section>
 
-      {/* Washington County */}
-      <section className="py-10 bg-[var(--hops-cream)]">
+      {/* Forest Grove School Board */}
+      <section className="py-16 bg-[var(--hops-cream)]">
         <div className="max-w-6xl mx-auto px-4">
-          <SectionHeader>Washington County</SectionHeader>
+          <SectionHeader>Forest Grove School Board</SectionHeader>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <SupporterCard name="Kristine Adams Wannberg" title="Washington County Auditor" />
+            <SupporterCard name="Kristy Kottkey" title="School Board Chair" />
+            <SupporterCard name="Pete Truax" title="School Board Director" />
+            <SupporterCard name="Brisa Franco" title="School Board Director" />
           </div>
         </div>
       </section>
@@ -124,14 +126,12 @@ export default function SupportersPage() {
         </div>
       </section>
 
-      {/* Forest Grove School Board */}
-      <section className="py-16 bg-[var(--hops-cream)]">
+      {/* Washington County */}
+      <section className="py-10 bg-[var(--hops-cream)]">
         <div className="max-w-6xl mx-auto px-4">
-          <SectionHeader>Forest Grove School Board</SectionHeader>
+          <SectionHeader>Washington County</SectionHeader>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <SupporterCard name="Kristy Kottkey" title="School Board Chair" />
-            <SupporterCard name="Pete Truax" title="School Board Director" />
-            <SupporterCard name="Brisa Franco" title="School Board Director" />
+            <SupporterCard name="Kristine Adams Wannberg" title="Washington County Auditor" />
           </div>
         </div>
       </section>

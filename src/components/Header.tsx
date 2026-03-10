@@ -40,8 +40,8 @@ export default function Header() {
             Issues
           </Link>
           <Link
-            href="/endorsements"
-            className={`transition-colors ${isActive("/endorsements") ? "text-[var(--hops-green)]" : "hover:text-[var(--hops-green)]"}`}
+            href="/supporters"
+            className={`transition-colors ${isActive("/supporters") ? "text-[var(--hops-green)]" : "hover:text-[var(--hops-green)]"}`}
           >
             Supporters
           </Link>
