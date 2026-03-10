@@ -137,7 +137,7 @@ export default function SupportersPage() {
       </section>
 
       {/* Hillsboro Hops */}
-      <section className="py-10 bg-[var(--hops-cream)]">
+      <section className="py-10 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <SectionHeader>Hillsboro Hops Leadership</SectionHeader>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -148,7 +148,7 @@ export default function SupportersPage() {
       </section>
 
       {/* Community & Education Leaders */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[var(--hops-cream)]">
         <div className="max-w-6xl mx-auto px-4">
           <SectionHeader>Community &amp; Education Leaders</SectionHeader>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
