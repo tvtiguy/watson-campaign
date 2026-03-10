@@ -37,7 +37,7 @@ export default function SupportersPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block bg-[var(--hops-green)] text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
-                27 Endorsers and Growing
+                30 Endorsers and Growing
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Endorsed By<br />Community Leaders</h1>
               <p className="text-xl text-gray-200 leading-relaxed">
@@ -91,7 +91,7 @@ export default function SupportersPage() {
             <SupporterCard name="Rob Harris" title="City Council President — Hillsboro" />
             <SupporterCard name="Saba Anvery" title="City Councilor — Hillsboro" />
             <SupporterCard name="Elizabeth Case" title="City Councilor — Hillsboro" />
-            <SupporterCard name="Angeles Godinez" title="City Council President — Cornelius" />
+            <SupporterCard name="Angeles Godinez Valencia" title="City Council President — Cornelius" />
             <SupporterCard name="Eden Lopez" title="City Councilor — Cornelius" />
             <SupporterCard name="Mariana Valenzuela" title="City Councilor — Forest Grove" />
             <SupporterCard name="Brian Schimmel" title="City Councilor — Forest Grove" />
@@ -120,6 +120,18 @@ export default function SupportersPage() {
             <SupporterCard name="Yessica Hardin Mercado" title="School Board Member" />
             <SupporterCard name="Patrick Maguire" title="School Board Member" />
             <SupporterCard name="Nancy Thomas" title="School Board Member" />
+          </div>
+        </div>
+      </section>
+
+      {/* Forest Grove School Board */}
+      <section className="py-16 bg-[var(--hops-cream)]">
+        <div className="max-w-6xl mx-auto px-4">
+          <SectionHeader>Forest Grove School Board</SectionHeader>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <SupporterCard name="Kristy Kottkey" title="School Board Chair" />
+            <SupporterCard name="Pete Truax" title="School Board Member" />
+            <SupporterCard name="Brisa Franco" title="School Board Member" />
           </div>
         </div>
       </section>
