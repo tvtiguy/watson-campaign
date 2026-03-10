@@ -37,11 +37,11 @@ export default function SupportersPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block bg-[var(--hops-green)] text-white text-sm font-semibold px-3 py-1 rounded-full mb-4">
-                30 Endorsers and Growing
+                Dozens and Growing!
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Endorsed By<br />Community Leaders</h1>
               <p className="text-xl text-gray-200 leading-relaxed">
-                Mayors, city councilors, school board members, and community leaders across Hillsboro, Cornelius, and Forest Grove are backing Mark Watson for House District 29.
+                Mayors, city councilors, school board members, and community leaders across Cornelius, Forest Grove, and Hillsboro are backing Mark Watson for House District 29.
               </p>
             </div>
             <div className="flex justify-center">
