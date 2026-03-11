@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Supporters | Mark Watson for Oregon House District 29",
-  description: "27 community leaders endorsing Mark Watson for Oregon House District 29 — mayors, councilors, school board members, and more.",
+  description: "Community leaders and organizations endorsing Mark Watson for Oregon House District 29 — mayors, councilors, school board members, labor unions, and more.",
 };
 
 function SupporterCard({ name, title }: { name: string; title: string }) {
@@ -41,7 +41,7 @@ export default function SupportersPage() {
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">Endorsed By<br />Community Leaders</h1>
               <p className="text-xl text-gray-200 leading-relaxed">
-                Mayors, city councilors, school board members, and community leaders across Cornelius, Forest Grove, and Hillsboro are backing Mark Watson for House District 29.
+                Mayors, city councilors, school board members, labor unions, and community leaders across Cornelius, Forest Grove, and Hillsboro are backing Mark Watson for House District 29.
               </p>
             </div>
             <div className="flex justify-center">
@@ -87,20 +87,42 @@ export default function SupportersPage() {
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <SectionHeader>City Councilors</SectionHeader>
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* Cornelius */}
+            <div className="flex flex-col gap-4">
+              <p className="text-xs font-bold uppercase tracking-widest text-[var(--hops-navy)] border-b border-gray-200 pb-2">Cornelius</p>
+              <SupporterCard name="Angeles Godinez Valencia" title="City Council President" />
+              <SupporterCard name="Eden Lopez" title="City Councilor" />
+            </div>
+            {/* Forest Grove */}
+            <div className="flex flex-col gap-4">
+              <p className="text-xs font-bold uppercase tracking-widest text-[var(--hops-navy)] border-b border-gray-200 pb-2">Forest Grove</p>
+              <SupporterCard name="Mariana Valenzuela" title="City Council President" />
+              <SupporterCard name="Brian Schimmel" title="City Councilor" />
+            </div>
+            {/* Hillsboro */}
+            <div className="flex flex-col gap-4">
+              <p className="text-xs font-bold uppercase tracking-widest text-[var(--hops-navy)] border-b border-gray-200 pb-2">Hillsboro</p>
+              <SupporterCard name="Rob Harris" title="City Council President" />
+              <SupporterCard name="Saba Anvery" title="City Councilor" />
+              <SupporterCard name="Elizabeth Case" title="City Councilor" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Organizations */}
+      <section className="py-16 bg-[var(--hops-cream)]">
+        <div className="max-w-6xl mx-auto px-4">
+          <SectionHeader>Organizations</SectionHeader>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <SupporterCard name="Angeles Godinez Valencia" title="City Council President — Cornelius" />
-            <SupporterCard name="Eden Lopez" title="City Councilor — Cornelius" />
-            <SupporterCard name="Mariana Valenzuela" title="City Council President — Forest Grove" />
-            <SupporterCard name="Brian Schimmel" title="City Councilor — Forest Grove" />
-            <SupporterCard name="Rob Harris" title="City Council President — Hillsboro" />
-            <SupporterCard name="Saba Anvery" title="City Councilor — Hillsboro" />
-            <SupporterCard name="Elizabeth Case" title="City Councilor — Hillsboro" />
+            <SupporterCard name="Hillsboro Classified United Local 4671" title="Labor Organization" />
           </div>
         </div>
       </section>
 
       {/* Forest Grove School Board */}
-      <section className="py-16 bg-[var(--hops-cream)]">
+      <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <SectionHeader>Forest Grove School Board</SectionHeader>
           <p className="text-gray-500 text-base -mt-6 mb-6 ml-5">Serving Cornelius and Forest Grove</p>
@@ -113,7 +135,7 @@ export default function SupportersPage() {
       </section>
 
       {/* Hillsboro School Board */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[var(--hops-cream)]">
         <div className="max-w-6xl mx-auto px-4">
           <SectionHeader>Hillsboro School Board</SectionHeader>
           <p className="text-gray-500 text-base -mt-6 mb-6 ml-5">Serving Cornelius, Hillsboro, and rural Washington County</p>
@@ -129,7 +151,7 @@ export default function SupportersPage() {
       </section>
 
       {/* Washington County */}
-      <section className="py-10 bg-[var(--hops-cream)]">
+      <section className="py-10 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <SectionHeader>Washington County</SectionHeader>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -139,7 +161,7 @@ export default function SupportersPage() {
       </section>
 
       {/* Hillsboro Hops */}
-      <section className="py-10 bg-white">
+      <section className="py-10 bg-[var(--hops-cream)]">
         <div className="max-w-6xl mx-auto px-4">
           <SectionHeader>Hillsboro Hops Leadership</SectionHeader>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -150,13 +172,13 @@ export default function SupportersPage() {
       </section>
 
       {/* Community & Education Leaders */}
-      <section className="py-16 bg-[var(--hops-cream)]">
+      <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <SectionHeader>Community &amp; Education Leaders</SectionHeader>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <SupporterCard name="Kim Strelchun" title="President, Hillsboro Schools Foundation" />
-            <SupporterCard name="Jaci Spross" title="Hillsboro Schools Foundation; Former School Board Director" />
-            <SupporterCard name="Laura Bekken" title="Hillsboro Schools Foundation" />
+            <SupporterCard name="Kim Strelchun" title="Former School Board Member" />
+            <SupporterCard name="Jaci Spross" title="Former School Board Member" />
+            <SupporterCard name="Laura Bekken" title="Community Leader" />
             <SupporterCard name="Gabriel Jones-Gallardo" title="Planning Commission President — Hillsboro" />
             <SupporterCard name="Lisa Allen" title="Former Hillsboro School Board Director" />
             <SupporterCard name="Erika Lopez" title="Former Hillsboro School Board Director" />
