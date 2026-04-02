@@ -1,14 +1,26 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Link from "next/link";
 
-export const metadata = {
-  title: "Issues | Mark Watson for Oregon House District 29",
-  description: "Mark Watson's priorities for House District 29: Education, Economic Development, and Community Engagement.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "meta" });
+  return {
+    title: t("issuesTitle"),
+    description: t("issuesDescription"),
+  };
+}
 
 export default function IssuesPage() {
+  const t = useTranslations("issues");
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -18,12 +30,12 @@ export default function IssuesPage() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">The Issues</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("heroTitle")}</h1>
               <p className="text-xl text-gray-200 leading-relaxed mb-4">
-                From my years working on the school board and in legislative offices, I know passing policies or bills is a team effort. I also worked 15 seasons in Major League Baseball. These are the issues I will immediately get to work on with my colleagues.
+                {t("heroSubtitle")}
               </p>
               <p className="text-2xl font-bold text-[var(--hops-green-light)]">
-                Put me in coach, I&apos;m ready to play.
+                {t("heroTagline")}
               </p>
             </div>
             <div className="flex justify-center">
@@ -55,10 +67,10 @@ export default function IssuesPage() {
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[var(--hops-navy)] mb-6">
-                Education
+                {t("educationTitle")}
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Oregon&apos;s school funding formula is over 30 years old, and it shows. I&apos;ll advocate for a modernized funding model that uses broader outcome measures and accounts for the real costs facing districts like ours. Oregon&apos;s students deserve an approach built for the challenges they face today — not one designed for a problem we faced in the 1990s.
+                {t("educationText")}
               </p>
             </div>
           </div>
@@ -71,10 +83,10 @@ export default function IssuesPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <h2 className="text-3xl md:text-4xl font-bold text-[var(--hops-navy)] mb-6">
-                Economic Development
+                {t("economicTitle")}
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Washington County is the economic engine of the state, but like all engines, it requires maintenance. We are facing a manufacturing recession, and the results are felt at every kitchen table. Let&apos;s pass policies that really illustrate that Oregon is open for business. Between the Forest Grove School District and Hillsboro School District there are over 50 Career and Technical Education pathways (CTE) that connect students with the business community to prepare the workforce of tomorrow.
+                {t("economicText")}
               </p>
             </div>
             <div className="relative h-80 rounded-xl overflow-hidden shadow-xl order-1 md:order-2">
@@ -103,13 +115,13 @@ export default function IssuesPage() {
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[var(--hops-navy)] mb-6">
-                Community Engagement
+                {t("communityTitle")}
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                State Representatives should do more than vote on the House floor. It requires a proactive, visible presence in Cornelius, Forest Grove, and Hillsboro. The historical standard of an open door is insufficient in an era where constituents expect their leaders to be present in local spaces. I am committed to maintaining clear lines of communication with our city leaders and school districts to ensure our district&apos;s needs are never misinterpreted in Salem.
+                {t("communityText")}
               </p>
               <p className="text-lg mt-6">
-                <span className="font-bold text-[var(--hops-navy)]">Connect with the Campaign: </span>
+                <span className="font-bold text-[var(--hops-navy)]">{t("connectLabel")} </span>
                 <a href="mailto:info@watsonfororegon.com" className="text-[var(--hops-green)] hover:text-[var(--hops-green-light)] font-semibold transition-colors">
                   info@watsonfororegon.com
                 </a>
@@ -123,16 +135,16 @@ export default function IssuesPage() {
       <section className="py-16 bg-[var(--hops-green)] text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Build a Stronger District 29?
+            {t("ctaTitle")}
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Support Mark Watson&apos;s campaign for Oregon House District 29.
+            {t("ctaText")}
           </p>
           <Link
             href="/contribute"
             className="inline-block bg-white text-[var(--hops-navy)] hover:bg-[var(--hops-cream)] px-10 py-4 rounded-md font-bold text-xl transition-colors shadow-lg"
           >
-            Contribute Now
+            {t("contributeNow")}
           </Link>
         </div>
       </section>

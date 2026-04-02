@@ -1,14 +1,26 @@
 import Image from "next/image";
+import { useTranslations, useMessages } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Link from "next/link";
 
-export const metadata = {
-  title: "About Mark | Mark Watson for Oregon House District 29",
-  description: "Learn about Mark Watson - husband, father, small business owner, school board director, and candidate for Oregon House District 29.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "meta" });
+  return {
+    title: t("aboutTitle"),
+    description: t("aboutDescription"),
+  };
+}
 
 export default function AboutPage() {
+  const t = useTranslations("about");
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -18,9 +30,9 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">About Mark</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("heroTitle")}</h1>
               <p className="text-xl text-gray-200 leading-relaxed">
-                Husband, father, small business owner, school board director, and your neighbor in Washington County.
+                {t("heroSubtitle")}
               </p>
             </div>
             <div className="flex justify-center">
@@ -42,18 +54,10 @@ export default function AboutPage() {
       <section className="py-16 bg-white flex-grow">
         <div className="max-w-4xl mx-auto px-4">
           <div className="prose prose-lg max-w-none text-gray-700">
-            <p className="text-xl leading-relaxed mb-6">
-              Mark is a husband, father, small business owner, and school board director. He has spent all of his time in Oregon living in the Hillsboro School District and recently moved to Downtown Hillsboro.
-            </p>
-            <p className="text-xl leading-relaxed mb-6">
-              In 2002 Mark co-founded TVTI, a software company, specializing in computerized video analysis for MLB and NHL teams, securing contracts with almost all teams.
-            </p>
-            <p className="text-xl leading-relaxed mb-6">
-              Recently he has been working as a legislative aide in the State Capitol, serving offices in both the House and Senate. This experience has given him firsthand knowledge of how to effectively advocate for the district.
-            </p>
-            <p className="text-xl leading-relaxed mb-8">
-              When he&apos;s not advocating for education, you can find Mark on a golf course or playing music in his cover band: 45th Parallel.
-            </p>
+            <p className="text-xl leading-relaxed mb-6">{t("bio1")}</p>
+            <p className="text-xl leading-relaxed mb-6">{t("bio2")}</p>
+            <p className="text-xl leading-relaxed mb-6">{t("bio3")}</p>
+            <p className="text-xl leading-relaxed mb-8">{t("bio4")}</p>
           </div>
         </div>
       </section>
@@ -62,7 +66,7 @@ export default function AboutPage() {
       <section className="py-16 bg-[var(--hops-cream)]">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-[var(--hops-navy)] mb-12 text-center">
-            Experience &amp; Community
+            {t("experienceTitle")}
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -77,10 +81,8 @@ export default function AboutPage() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-[var(--hops-navy)] mb-2">School Board Director</h3>
-                <p className="text-gray-600">
-                  Serving on the Hillsboro School District Board, advocating for students, teachers, and families across our community.
-                </p>
+                <h3 className="text-xl font-bold text-[var(--hops-navy)] mb-2">{t("schoolBoardTitle")}</h3>
+                <p className="text-gray-600">{t("schoolBoardText")}</p>
               </div>
             </div>
 
@@ -95,14 +97,12 @@ export default function AboutPage() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-[var(--hops-navy)] mb-2">Legislative Experience</h3>
-                <p className="text-gray-600">
-                  Working as a legislative aide in the State Capitol, learning firsthand how to effectively advocate for District 29 residents.
-                </p>
+                <h3 className="text-xl font-bold text-[var(--hops-navy)] mb-2">{t("legislativeTitle")}</h3>
+                <p className="text-gray-600">{t("legislativeText")}</p>
               </div>
             </div>
 
-            {/* Equal Justice */}
+            {/* Community Service */}
             <div className="bg-white rounded-xl overflow-hidden shadow-lg">
               <div className="relative h-64">
                 <Image
@@ -113,10 +113,8 @@ export default function AboutPage() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-[var(--hops-navy)] mb-2">Community Service</h3>
-                <p className="text-gray-600">
-                  Giving back to our neighbors through volunteer work and community involvement.
-                </p>
+                <h3 className="text-xl font-bold text-[var(--hops-navy)] mb-2">{t("communityServiceTitle")}</h3>
+                <p className="text-gray-600">{t("communityServiceText")}</p>
               </div>
             </div>
 
@@ -131,10 +129,8 @@ export default function AboutPage() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-[var(--hops-navy)] mb-2">Life Outside Politics</h3>
-                <p className="text-gray-600">
-                  An avid golfer and musician, Mark plays in his cover band 45th Parallel when not working for the community.
-                </p>
+                <h3 className="text-xl font-bold text-[var(--hops-navy)] mb-2">{t("lifeTitle")}</h3>
+                <p className="text-gray-600">{t("lifeText")}</p>
               </div>
             </div>
           </div>
@@ -145,21 +141,13 @@ export default function AboutPage() {
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-[var(--hops-navy)] mb-8 text-center">
-            A Deeper Dive
+            {t("deeperDiveTitle")}
           </h2>
           <div className="bg-[var(--hops-cream)] rounded-xl p-8">
-            <p className="leading-relaxed mb-4 text-gray-700">
-              I was born in Chicago but have always made my happiest homes where urban areas meet rural spaces. Maybe that&apos;s because my dad was born on a farm in rural Alabama. Although I grew up in the suburbs, my high school was surrounded on three sides by corn fields.
-            </p>
-            <p className="leading-relaxed mb-4 text-gray-700">
-              In Tucson, AZ, where I received my Master&apos;s Degree at the University of Arizona and worked at the ABC affiliate KGUN, we lived on the far east side where the edge of Tucson meets the mountain wilderness. After a brief stop in Charlotte, NC, where I worked at the ABC affiliate WSOC and our daughter was born, I joined a team at Intel and we relocated to Oregon.
-            </p>
-            <p className="leading-relaxed mb-4 text-gray-700">
-              We happily raised our children in the Hillsboro School District. In 2021 our home was taken from us in a fire and we had to start again. We remodeled the small home of my mother in downtown Hillsboro into a duplex, and now enjoy the many benefits of multigenerational living.
-            </p>
-            <p className="leading-relaxed font-semibold text-[var(--hops-navy)]">
-              After 26 years in Oregon, I hope we never have to live anywhere else.
-            </p>
+            <p className="leading-relaxed mb-4 text-gray-700">{t("deeperDive1")}</p>
+            <p className="leading-relaxed mb-4 text-gray-700">{t("deeperDive2")}</p>
+            <p className="leading-relaxed mb-4 text-gray-700">{t("deeperDive3")}</p>
+            <p className="leading-relaxed font-semibold text-[var(--hops-navy)]">{t("deeperDive4")}</p>
           </div>
         </div>
       </section>
@@ -168,16 +156,16 @@ export default function AboutPage() {
       <section className="py-16 bg-[var(--hops-green)] text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Get Involved?
+            {t("ctaTitle")}
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Support Mark&apos;s campaign for House District 29.
+            {t("ctaText")}
           </p>
           <Link
             href="/contribute"
             className="inline-block bg-white text-[var(--hops-navy)] hover:bg-[var(--hops-cream)] px-10 py-4 rounded-md font-bold text-xl transition-colors shadow-lg"
           >
-            Contribute Now
+            {t("contributeNow")}
           </Link>
         </div>
       </section>
