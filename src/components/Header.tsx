@@ -6,7 +6,7 @@ import { Link, usePathname } from "@/i18n/navigation";
 import { useParams } from "next/navigation";
 
 // Set this to true when ready to show the language switcher publicly
-const SHOW_LANGUAGE_SWITCHER = false;
+const SHOW_LANGUAGE_SWITCHER = true;
 
 export default function Header() {
   const pathname = usePathname();
