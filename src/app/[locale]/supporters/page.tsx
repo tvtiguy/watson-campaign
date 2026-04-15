@@ -140,7 +140,7 @@ export default function SupportersPage() {
           <p className="text-gray-500 text-base -mt-6 mb-6 ml-5">{t("fgSchoolBoardNote")}</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             <SupporterCard name="Kristy Kottkey" title={t("titles.schoolBoardChair")} />
-            <SupporterCard name="Pete Truax" title={t("titles.schoolBoardDirector")} />
+            <SupporterCard name="Pete Truax" title={t("titles.schoolBoardDirectorMale")} />
             <SupporterCard name="Brisa Franco" title={t("titles.schoolBoardDirector")} />
           </div>
         </div>
@@ -156,7 +156,7 @@ export default function SupportersPage() {
             <SupporterCard name="See Eun Kim" title={t("titles.schoolBoardViceChair")} />
             <SupporterCard name="Katie Rhyne" title={t("titles.schoolBoardDirector")} />
             <SupporterCard name="Yessica Hardin Mercado" title={t("titles.schoolBoardDirector")} />
-            <SupporterCard name="Patrick Maguire" title={t("titles.schoolBoardDirector")} />
+            <SupporterCard name="Patrick Maguire" title={t("titles.schoolBoardDirectorMale")} />
             <SupporterCard name="Nancy Thomas" title={t("titles.schoolBoardDirector")} />
           </div>
         </div>
