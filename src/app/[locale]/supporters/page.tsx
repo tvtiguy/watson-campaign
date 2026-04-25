@@ -129,6 +129,8 @@ export default function SupportersPage() {
           <SectionHeader>{t("organizations")}</SectionHeader>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             <SupporterCard name="Hillsboro Classified United Local 4671" title={t("titles.laborOrg")} />
+            <SupporterCard name="American Federation of Teachers Oregon" title={t("titles.laborOrg")} />
+            <SupporterCard name="Washington County Chamber of Commerce" title={t("titles.businessOrg")} />
           </div>
         </div>
       </section>
