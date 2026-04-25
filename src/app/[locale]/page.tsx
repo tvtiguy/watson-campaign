@@ -11,8 +11,21 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       <Header />
 
+      {/* Campaign Trail Banner */}
+      <div className="bg-[var(--hops-green)] text-white text-center py-3 px-4">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMGDnagboYdWioCz00GKWFelrY1jDk9zrQqBp2mc5h1kw7Fg/viewform" target="_blank" rel="noopener noreferrer" className="block font-semibold text-lg mb-1 hover:underline">We are in the final push to elect Mark</a>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeMGDnagboYdWioCz00GKWFelrY1jDk9zrQqBp2mc5h1kw7Fg/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-lg hover:underline"
+        >
+          Click Here to Join Us on the Campaign Trail →
+        </a>
+      </div>
+
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[var(--hops-navy)] to-[var(--hops-navy-dark)] text-white py-16 md:py-24">
+      <section className="bg-gradient-to-br from-[var(--hops-navy)] to-[var(--hops-navy-dark)] text-white pt-8 pb-16 md:pt-10 md:pb-24">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
